@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title>Форма</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="name"><b>Name:*</b></label
+      ><br />
+      <input
+        type="text"
+        name="name"
+        id="name"
+        required
+        placeholder="Your name"
+        minlength="2"
+      />
+      <br /><br />
+      <label for="Surname"><b>Surname:*</b></label
+      ><br />
+      <input
+        type="text"
+        name="Surname"
+        id="Surname"
+        required
+        placeholder="Your surname"
+        minlength="2"
+      />
+      <br /><br />
+      <label for="Email"><b>Email:*</b></label
+      ><br />
+      <input
+        type="email"
+        name="email"
+        id="Email"
+        required
+        placeholder="Your email"
+        maxlength="50"
+        minlength="5"
+      />
+
+      <br /><br />
+      <label for="Password"><b>Password:*</b></label
+      ><br />
+      <input
+        type="password"
+        name="password"
+        id="Password"
+        required
+        placeholder="Your password"
+        maxlength="20"
+        minlength="6"
+      />
+      <br /><br />
+      <label for="birthday"> <b>Select your birthday</b></label
+      ><br />
+      <input
+        id="birthday"
+        type="date"
+        min="1950-01-01"
+        max="2023-01-01"
+        required
+      />
+      <br /><br />
+      <label for="tentacles"
+        ><b>How many hours per day do you spend on the Internet?*</b></label
+      ><br />
+      <input
+        type="number"
+        id="tentacles"
+        name="tentacles"
+        min="0"
+        max="24"
+        required
+      />
+      <br /><br />
+      <div>
+        <label for="Male"><b>Male</b></label>
+        <input
+          type="radio"
+          id="Male"
+          name="radio"
+          value="Male"
+          checked
+          required
+        />
+        <label for="Female"><b>Female</b></label>
+        <input type="radio" id="Female" name="radio" value="Female" required />
+      </div>
+      <br />
+      <label for="Country"><b>Country:*</b></label
+      ><br />
+      <select name="Country" id="Country" required>
+        <option value="" hidden>Chose your country</option>
+        <option value="ukraine">Україна</option>
+        <option value="england">Англія</option>
+        <option value="poland">Польща</option></select
+      ><br /><br />
+
+      <label for="Photo"><b>Photo</b></label
+      ><br />
+      <input
+        type="file"
+        id="Photo"
+        name="Photo"
+        accept="image/png, image/jpeg"
+      /><br /><br />
+
+      <label for="color"><b>Chose the themes you are interested in</b></label>
+      <div>
+        <input type="color" id="color" name="head" value="#000000" />
+      </div>
+      <br />
+
+      <b>Chose the themes you are interested in</b>
+      <div>
+        <label for="IT">IT</label>
+        <input type="checkbox" id="IT" name="IT" />
+
+        <label for="Sport">Sport</label>
+        <input type="checkbox" id="Sport" name="Sport" />
+
+        <label for="Books">Books</label>
+        <input type="checkbox" id="Books" name="Books" />
+
+        <label for="Art">Art</label>
+        <input type="checkbox" id="Art" name="Art" />
+      </div>
+      <br />
+
+      <label for="comment"><b>Add your comment:</b></label
+      ><br />
+      <textarea id="comment" name="comment" rows="5" cols="33"> </textarea>
+      <br />
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
